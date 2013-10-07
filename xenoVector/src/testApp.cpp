@@ -19,7 +19,12 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
     for (int i = 0; i < 9; i++){
+        if (i == 0){
         myRectangle[i].xenoToPoint(mouseX, mouseY);
+        }
+        else{
+            myRectangle[i].xenoToPoint(myRectangle[i-1].pos.x, myRectangle[i-1].pos.y);
+        }
     }
     
 }
