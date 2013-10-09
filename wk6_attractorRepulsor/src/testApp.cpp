@@ -5,10 +5,10 @@ void testApp::setup(){
     
     ofSetVerticalSync(true);
     ofSetFrameRate(60);
-    ofBackground(200,210,230);
+    ofBackground(230,190,50);
     ofEnableAlphaBlending();
     
-    for (int i = 0; i < 20000; i++){
+    for (int i = 0; i < 25000; i++){
         Particle myParticle;
         myParticle.setInitCondition(ofRandom(0,1000), ofRandom(0,1000), 0, 0);
         myParticle.damping = ofRandom(0.01,0.05);
@@ -33,7 +33,7 @@ void testApp::update(){
         particles[i].addDamping();
         particles[i].update();
         
-        if (i == i+3){
+        if (i == 0){
             particles[i].trail(mouseX, mouseY);
         }else{
             particles[i].trail(particles[i-1].pos.x, particles[i-1].pos.y);

@@ -8,6 +8,7 @@ void testApp::setup(){
     ofBackground(0,0,0);
     ofSetCircleResolution(150);
     ofEnableSmoothing();
+    ofSetFrameRate(60);
     
     
     for (int i = 0; i<20; i++){
@@ -33,7 +34,7 @@ void testApp::draw(){
     
     for (int i = 0; i < 20; i++){
         float sinOfTime = sin( ofGetElapsedTimef()/2.5 );
-        float sinMapped = ofMap( sinOfTime, -1, 1, 1, 380 );
+        float sinMapped = ofMap( sinOfTime, -1, 1, 1, 480 );
         ofSetColor(50, 255, 200);
         ofSetLineWidth(i+3.0);
         ofNoFill();
@@ -41,8 +42,8 @@ void testApp::draw(){
     }
     
     for (int i = 0; i < 20; i++){
-        float sinOfTime = sin( ofGetElapsedTimef()/2.5 );
-        float sinMapped = ofMap( sinOfTime, -7, 1, -30, 380 );
+        float sinOfTime = sin( ofGetElapsedTimef()/1.5 );
+        float sinMapped = ofMap( sinOfTime, -1, 1, -30, 480 );
         ofSetColor(255, 55, 120);
         ofSetLineWidth(i+2.0);
         ofNoFill();
@@ -51,7 +52,7 @@ void testApp::draw(){
     
     for (int i = 0; i < 20; i++){
         float sinOfTime = sin( ofGetElapsedTimef()/2.5 );
-        float sinMapped = ofMap( sinOfTime, -7, 1, 1, 800 );
+        float sinMapped = ofMap( sinOfTime, -1, 1, 1, 800 );
         ofSetColor(50, 55, 255);
         ofSetLineWidth(i+2.0);
         ofNoFill();
@@ -59,12 +60,21 @@ void testApp::draw(){
     }
 
     for (int i = 0; i < 20; i++){
-        float sinOfTime = sin( ofGetElapsedTimef()/2.5 );
+        float sinOfTime = sin( ofGetElapsedTimef()/7.5 );
         float sinMapped = ofMap( sinOfTime, 1, -1, 1, 500 );
         ofSetColor(150, 55, 255);
         ofSetLineWidth(i+2.0);
         ofNoFill();
         ofCircle(myCirclesX2[i], myCirclesY2[i], sinMapped+(i*21));
+    }
+    
+    for (int i = 0; i < 20; i++){
+        float sinOfTime = sin( ofGetElapsedTimef()/5.5 );
+        float sinMapped = ofMap( sinOfTime, 1, -1, 1, 500 );
+        ofSetColor(35, 35, 50);
+        ofSetLineWidth(i+1.1);
+        ofNoFill();
+        ofCircle(myCirclesX2[i], myCirclesY2[i], sinMapped+(i*14));
     }
     
 }

@@ -12,10 +12,10 @@
 Particle::Particle(){
     setInitCondition(ofGetWindowWidth()/2, ofGetWindowHeight()/2, 0, 0);
     damping = 0.09f;
-    size = 1.2;
+    size = 1.1;
     r = ofRandom(0,80);
-    g = ofRandom(20,120);
-    b = ofRandom(150,200);
+    g = ofRandom(50,120);
+    b = ofRandom(100,140);
     
 }
 
