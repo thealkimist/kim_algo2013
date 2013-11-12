@@ -18,7 +18,11 @@ void Particle::setup( ofVec2f rVel){
     pVanish = false;
     gravity = 0.04;
     
-};
+    r = 255;
+    g = ofRandom(10,80);
+    b = ofRandom(90,220);
+    
+}
 
 void Particle::update(){
     
@@ -36,7 +40,7 @@ void Particle::update(){
     if( age > lifespan ){
         pVanish = true;
     }
-};
+}
 
 void Particle::draw(){
     if ( pVanish ) {
@@ -45,10 +49,12 @@ void Particle::draw(){
     
     float ageOfParticle = 1.0 - ( (float)age / (float)lifespan );
     
-    ofSetColor(255,50,150);
+    ofSetColor(r,g,b);
     //ofSetLineWidth(10.0);
     ofCircle( pos, 4.0 * ageOfParticle );
-    
-};
+
+}
+
+
 
 

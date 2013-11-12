@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55870508-21F4-49FB-8B65-276CDF68CDAA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wk8_particleVectorField_01</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</key>
+		<string>https://github.com/thealkimist/kim_algo2013</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wk8_particleVectorField_01/wk8_particleVectorField_01.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thealkimist/kim_algo2013</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>algo2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>

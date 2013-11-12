@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B14DD0180D931300180175 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B14DC9180D931300180175 /* tinyxml.cpp */; };
+		23B14DD1180D931300180175 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B14DCB180D931300180175 /* tinyxmlerror.cpp */; };
+		23B14DD2180D931300180175 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B14DCC180D931300180175 /* tinyxmlparser.cpp */; };
+		23B14DD3180D931300180175 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23B14DCE180D931300180175 /* ofxXmlSettings.cpp */; };
 		23DB1A0A1809C4AD003D5F79 /* FlowField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23DB1A081809C4AD003D5F79 /* FlowField.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -61,6 +65,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23B14DC9180D931300180175 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		23B14DCA180D931300180175 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		23B14DCB180D931300180175 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		23B14DCC180D931300180175 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		23B14DCE180D931300180175 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		23B14DCF180D931300180175 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
 		23DB1A081809C4AD003D5F79 /* FlowField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlowField.cpp; sourceTree = "<group>"; };
 		23DB1A091809C4AD003D5F79 /* FlowField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowField.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -117,9 +127,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23B14DC7180D931300180175 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				23B14DC8180D931300180175 /* libs */,
+				23B14DCD180D931300180175 /* src */,
+			);
+			name = ofxXmlSettings;
+			path = ../../../addons/ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		23B14DC8180D931300180175 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				23B14DC9180D931300180175 /* tinyxml.cpp */,
+				23B14DCA180D931300180175 /* tinyxml.h */,
+				23B14DCB180D931300180175 /* tinyxmlerror.cpp */,
+				23B14DCC180D931300180175 /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		23B14DCD180D931300180175 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				23B14DCE180D931300180175 /* ofxXmlSettings.cpp */,
+				23B14DCF180D931300180175 /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				23B14DC7180D931300180175 /* ofxXmlSettings */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -293,8 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DB1A0A1809C4AD003D5F79 /* FlowField.cpp in Sources */,
+				23B14DD0180D931300180175 /* tinyxml.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				23B14DD1180D931300180175 /* tinyxmlerror.cpp in Sources */,
+				23B14DD2180D931300180175 /* tinyxmlparser.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
+				23B14DD3180D931300180175 /* ofxXmlSettings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

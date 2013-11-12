@@ -78,6 +78,18 @@ void FlowField::setSinCos(){
     }
 }
 
+void FlowField::setMouse(ofVec2f mousePos){
+    for ( int y =0; y < flowList.size(); y++ ){
+        for (int x = 0; x < flowList[y].size(); x++ ){
+            ofVec2f pos;                                // declare vector for new object
+            pos.set(x*resolution, y*resolution);        // set the object's position to resolution
+            ofVec2f followMouse = mousePos - pos;       // declare new vector that follows mouse position
+            flowList[y][x].set(followMouse);
+        }
+    }
+}
+
+
 void FlowField::draw() {
     for( int y=0; y<flowList.size(); y++){
         for( int x=0; x<flowList[y].size(); x++){

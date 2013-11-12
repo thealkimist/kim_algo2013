@@ -9,6 +9,7 @@
 #pragma once
 #include "ofMain.h"
 
+
 typedef vector<ofVec2f> VectorList;
 
 class FlowField : public ofBaseApp {
@@ -21,6 +22,7 @@ public:
     void setPerlin();
     void setSinLerp();
     void setSinCos();
+    void setMouse(ofVec2f mousePos);
     
     void draw();
     
@@ -30,5 +32,5 @@ public:
     vector<VectorList>  flowList;
     int                 fieldWidth, fieldHeight, resolution;
     
-    ofPoint mousePos;
+    
 };

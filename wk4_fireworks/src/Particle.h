@@ -24,6 +24,7 @@ public:
     bool pVanish;
     float gravity;
     
+    int r, g, b;
     
     
 

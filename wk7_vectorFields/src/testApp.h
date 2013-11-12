@@ -2,12 +2,14 @@
 
 #include "ofMain.h"
 #include "FlowField.h"
+#include "ofxXmlSettings.h"
 
 class testApp : public ofBaseApp{
 public:
     void setup();
     void update();
     void draw();
+    void exit();
     
     void keyPressed(int key);
     void keyReleased(int key);
@@ -20,4 +22,6 @@ public:
     void gotMessage(ofMessage msg);
     
     FlowField myField;
+    
+ 
 };
