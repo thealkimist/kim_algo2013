@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29A1F80F-CC88-4F68-9527-0B249849CB00</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AlgoFinal2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</key>
+		<string>https://github.com/thealkimist/kim_algo2013</string>
+		<key>3C83F809-D142-4A70-8F57-D64BC8B02943</key>
+		<string>https://github.com/rezaali/ofxUI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AlgoFinal2/AlgoFinal2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</key>
+		<string>../../..</string>
+		<key>3C83F809-D142-4A70-8F57-D64BC8B02943</key>
+		<string>../../../../../addons/ofxUI</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thealkimist/kim_algo2013</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CAC611C-FB9F-491E-BC16-9B9C02B4147B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>algo2013</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C83F809-D142-4A70-8F57-D64BC8B02943</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxUI</string>
+		</dict>
+	</array>
+</dict>
+</plist>
