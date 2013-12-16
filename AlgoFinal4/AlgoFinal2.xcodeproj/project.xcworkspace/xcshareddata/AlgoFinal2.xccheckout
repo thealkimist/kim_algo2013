@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FBCC8F18-A4F9-4F5D-9882-DE77DB4FC9AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AlgoFinal2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2785D928-74F0-4B9B-8563-0909033118B7</key>
+		<string>https://github.com/rezaali/ofxUI.git</string>
+		<key>E9D0F929-5182-42A1-968C-A887A2EE7391</key>
+		<string>https://github.com/bfata/AlgoFinal2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AlgoFinal2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2785D928-74F0-4B9B-8563-0909033118B7</key>
+		<string>../../../../../../OFX/addons/ofxUI</string>
+		<key>E9D0F929-5182-42A1-968C-A887A2EE7391</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bfata/AlgoFinal2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E9D0F929-5182-42A1-968C-A887A2EE7391</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E9D0F929-5182-42A1-968C-A887A2EE7391</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AlgoFinal2</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2785D928-74F0-4B9B-8563-0909033118B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxUI</string>
+		</dict>
+	</array>
+</dict>
+</plist>
