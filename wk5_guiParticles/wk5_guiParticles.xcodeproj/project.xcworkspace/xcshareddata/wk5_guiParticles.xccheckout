@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9C82CFAC-9C41-44CB-89DD-AC76ECAF4EB8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wk5_guiParticles</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>980B7E7F-158A-4682-845E-862E423FB97E</key>
+		<string>https://github.com/thealkimist/kim_algo2013</string>
+		<key>E7DFAC35-0FF6-4B92-B3D1-5823FC6D8558</key>
+		<string>https://github.com/rezaali/ofxUI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wk5_guiParticles/wk5_guiParticles.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>980B7E7F-158A-4682-845E-862E423FB97E</key>
+		<string>../../..</string>
+		<key>E7DFAC35-0FF6-4B92-B3D1-5823FC6D8558</key>
+		<string>../../../../../addons/ofxUI</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thealkimist/kim_algo2013</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>980B7E7F-158A-4682-845E-862E423FB97E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>980B7E7F-158A-4682-845E-862E423FB97E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>algo2013</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7DFAC35-0FF6-4B92-B3D1-5823FC6D8558</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxUI</string>
+		</dict>
+	</array>
+</dict>
+</plist>
