@@ -6,9 +6,24 @@
 //
 //
 
-#ifndef __wk9_squashSquishParticles__Particle__
-#define __wk9_squashSquishParticles__Particle__
+#pragma once
 
-#include <iostream>
+#include "ofMain.h"
 
-#endif /* defined(__wk9_squashSquishParticles__Particle__) */
+class Particle{
+public:
+    Particle();
+    Particle( ofVec2f position );
+    
+    void applyForce( ofVec2f force );
+    void update();
+    void draw();
+    
+    ofVec2f pos;
+    ofVec2f acc;
+    ofVec2f vel;
+    
+    float mass;
+    
+    
+};
