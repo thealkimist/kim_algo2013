@@ -152,7 +152,7 @@ void FlowField::draw() {
 }
 
 void FlowField::drawVectorAt( const ofVec2f &vec, const ofVec2f &pos, const float &strength ) {
-    ofVec2f np = pos;
+    ofVec3f np = pos;
     drawVector( np, np + vec.normalized() * strength, 5, 3 );
 }
 

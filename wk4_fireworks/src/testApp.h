@@ -21,11 +21,18 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    void addParticle();
-    //void launchBall();
+    void explode( ofVec2f _expPos);
+    void launchParticle();
+    float dampen();
     
     vector<Particle> pList;
+    vector<Launch> ballLaunch;
     
-    Launch ballLaunch;
-		
+    ofVec2f launchPos;
+    ofVec2f explosionPos;
+    float interval;
+    float timeCapture;
+    
+    bool bLaunch;
+    
 };

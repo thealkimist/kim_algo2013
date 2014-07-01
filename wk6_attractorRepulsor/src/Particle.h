@@ -36,5 +36,6 @@ public:
     int r, g, b;
     float dist;
     
-    
+    ofColor color;
+        
 };

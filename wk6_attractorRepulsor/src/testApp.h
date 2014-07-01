@@ -23,4 +23,6 @@ class testApp : public ofBaseApp{
     vector<Particle> particles;
 	
 	int invisiCol;
+    
+    int r = 255;
 };

@@ -13,12 +13,13 @@
 class Launch {
 public:
     Launch();
-        
+    
+        void setup(ofVec2f _exp);
         void update();
         void draw();
     
         ofPoint pos;
-        ofVec2f vel;
+        ofVec2f vel, exp, cVel;
         ofColor col;
         float gravity;
 

@@ -8,42 +8,47 @@
 
 #include "Particle.h"
 
-void Particle::setup( ofVec2f rVel){
+void Particle::setup( ofVec2f rVel, ofVec2f _expPos, float _pSize){
     ofSetCircleResolution(100);
+    
+    expPos = _expPos;
     vel = rVel;
+    vel.normalize();
+    float mag = ofRandom(0.5,5.0);
+    vel *= mag;
     age = 0;
     lifespan = ofRandom(50,150);
     
-    pos = ofGetWindowSize() / 2.0;
-    pVanish = false;
+    bVanish = false;
     gravity = 0.04;
+    pSize = _pSize;
     
-    r = 255;
-    g = ofRandom(10,80);
-    b = ofRandom(90,220);
+    r = ofRandom(255);
+    g = 98;
+    b = 69;
     
 }
 
-void Particle::update(){
+void Particle::update( float dampen ){
     
-    float noise = ofNoise(pos.x * 0.005, pos.y*0.005, ofGetElapsedTimef() * 0.1) * 2.0;
+    float noise = ofNoise(expPos.x * 0.005, expPos.y*0.005, ofGetElapsedTimef() * 0.1) * 15.0;
     
     float ageOfParticle = 1.0 - ( (float)age / (float) lifespan );  //starts at 100% and counts down to 0%
     
-    pos += ofVec2f( cos(noise), sin(noise) ) * (1.0 - ageOfParticle );
-    pos += vel;
+    expPos += ofVec2f( cos(noise), sin(noise) ) * (1.0 - ageOfParticle );
+    expPos += vel;
     vel.y += gravity;
-    vel *= 0.97;
+    vel *= dampen;
     
     age++;
     
     if( age > lifespan ){
-        pVanish = true;
+        bVanish = true;
     }
 }
 
 void Particle::draw(){
-    if ( pVanish ) {
+    if ( bVanish ) {
         return;
     }
     
@@ -51,7 +56,7 @@ void Particle::draw(){
     
     ofSetColor(r,g,b);
     //ofSetLineWidth(10.0);
-    ofCircle( pos, 4.0 * ageOfParticle );
+    ofCircle( expPos, pSize * ageOfParticle );
 
 }
 

@@ -35,7 +35,7 @@ void testApp::setup(){
         myParticle.damping = ofRandom(0.01,0.05);
         particles.push_back(myParticle);
     }
-
+    
     particleR = 255;
     
     // Ripples
@@ -114,7 +114,7 @@ void testApp::shipUpdate(){
         particles[i].addDamping();
         particles[i].update();
         
-        particles[i].size = fader3 * 5;
+        particles[i].size = fader3 * 2;
         
     }
     
@@ -147,7 +147,7 @@ void testApp::starFieldUpdate(){
         }
     }
     
-    for( int i=0; i< rotary3 * 40; i++ ){
+    for( int i=0; i< rotary3 * 30; i++ ){
         addFlow();
     }
     
@@ -279,7 +279,7 @@ void testApp::addFlow(){
 void testApp::checkOsc(){
     
     while (mReceiver.hasWaitingMessages() ) {
-        ofxOscMessage  m;
+        ofxOscMessage m;
         mReceiver.getNextMessage(&m);
         
         string addr = m.getAddress();
@@ -390,10 +390,77 @@ void testApp::keyPressed(int key){
         
     }
     if(key == '8'){
-        
+    
     }
     if(key == '9'){
         
+    }
+    if(key == 'q'){
+        fader1 = fader1 + 0.1;
+        if (fader1 >= 1.0){
+            fader1 = 1;
+        }
+        cout << fader1 << endl;
+    }
+    if(key == 'w'){
+        fader1 = fader1 - 0.1;
+        if (fader1 <= 0.0){
+            fader1 = 0;
+        }
+        
+        cout << fader1 << endl;
+    }
+    if(key == 'e'){
+        fader2 = fader2 + 0.1;
+        if(fader2 >= 1.0){
+            fader2 = 1.0;
+        }
+    }
+    if(key == 'r'){
+        fader2 = fader2 - 0.1;
+        if(fader2 <= 0.0){
+            fader2 = 0.0;
+        }
+    }
+    
+    if(key == 't'){
+        fader3 = fader3 + 0.1;
+        if(fader3 >= 1){
+            fader3 = 1;
+        }
+    }
+    
+    if(key == 'y'){
+        fader3 = fader3 - 0.1;
+        if (fader3 <= 0.1){
+            fader3 = 0.1;
+        }
+    }
+
+    
+    if(key == 'a'){
+        rotary1 = rotary1 + 1;
+        if (rotary1 == 2){
+            rotary1 = 1;
+        }
+    }
+    if(key == 'z'){
+        rotary1 = rotary1 - 1;
+        if (rotary1 == -1){
+            rotary1 = 0;
+        }
+    }
+    if(key == 'd'){
+        rotary3 = rotary3 + 0.1;
+        if (rotary3 == 1.0){
+            rotary3 = 1.0;
+        }
+    }
+    if(key == 'c'){
+        rotary3 = rotary3 - 0.1;
+        if (rotary3 == 0){
+            rotary3 = 0.1;
+        }
     }
     
     

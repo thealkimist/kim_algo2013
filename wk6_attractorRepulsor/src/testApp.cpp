@@ -58,6 +58,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
+    
     for (int i = 0; i < particles.size(); i++){
   
         particles[i].draw();
@@ -71,6 +72,10 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    if(key == '1'){
+        r = 0;
+    }
 
 }
 

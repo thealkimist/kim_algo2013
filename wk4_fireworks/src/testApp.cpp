@@ -3,61 +3,113 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    ofBackground(0);
+    ofBackground(242,229,197);
     ofSetVerticalSync(true);
     ofSetFrameRate(60);
     ofNoFill();
  
+    interval = ofRandom(20,250);
+    bLaunch = false;
     
-    for( int i = 0; i < 100; i++ ){
-        addParticle();
-    }
-
+    ofColor orange;
+    ofColor red;
+    ofColor teal;
+    ofColor blue;
+    orange.setHex(0xF7B444);
+    red.setHex(0xEF6245);
+    teal.setHex(0x3CBCA6);
+    blue.setHex(0x117D84);
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
     
+    // resets the time difference
+    if(ofGetElapsedTimeMillis() - timeCapture > interval) {
+        launchParticle();
+        timeCapture = ofGetElapsedTimeMillis();
+        interval = ofRandom(20 , 200);
+    }
+    
+    
     for( vector<Particle>::iterator it = pList.begin(); it != pList.end(); ){
-        it -> update();
         
-        if( it -> pVanish){                         // if iterator finds dead particle, erase it
+        it -> update(dampen());
+        
+        // if iterator finds dead particle, erase it
+        if( it -> bVanish){
             it = pList.erase(it);
         }else{
             it++;
         }
     }
     
-    ballLaunch.update();
-
+    
+    for( vector<Launch>::iterator it = ballLaunch.begin(); it != ballLaunch.end(); ){
+        
+        it -> update();
+        
+        if( it -> pos.y < it -> exp.y ){
+            explode( it -> pos );
+            it = ballLaunch.erase(it);
+        }else{
+            it++;
+        }
+    }
     
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    
     for ( vector<Particle>::iterator it = pList.begin(); it != pList.end(); it++ ) {
         it -> draw();
     }
     
-    ballLaunch.draw();
+    for( vector<Launch>::iterator it = ballLaunch.begin(); it != ballLaunch.end(); it++){
+        it -> draw();
+    }
+    
    
 }
 
-void testApp::addParticle(){
-    Particle p;
+void testApp::explode(ofVec2f _expPos){
+
+//    std::random_shuffle(colors.begin(),colors.end());
+//    ofRandomize(colors);
     
-    ofVec2f rVel = ofVec2f( ofRandom(1.0), ofRandom(1.0)) * 10.0 - 5.0;
-    p.setup( rVel );
-    pList.push_back( p );
+    float pSize = ofRandom(2.0,10.0);
+    int eSize = ofRandom(30,500);
+    
+    cout<<eSize<<endl;
+    
+    for (int i = 0; i < eSize; i++){
+        Particle p;
+        ofVec2f rVel = ofVec2f( ofRandom(1.0), ofRandom(1.0)) * 40.0 - 15.0;
+        p.setup( rVel, _expPos, pSize);
+        pList.push_back( p );
+    }
 }
 
-//void testApp::launchBall(){
-//    
-//    ballLaunch.draw();
-//    
-//}
+void testApp::launchParticle(){
+    
+    // generates new explosion location every time
+    explosionPos.x = ofRandom(150, ofGetWindowWidth()-150);
+    explosionPos.y = ofRandom(0, ofGetWindowHeight()/2);
+    
+    Launch la;
+    la.setup(explosionPos);
+    ballLaunch.push_back(la);
+    
+    //cout<<explosionPos<<endl;
+    
+}
+
+float testApp::dampen(){
+    float d = 0.97;
+    return d;
+}
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){

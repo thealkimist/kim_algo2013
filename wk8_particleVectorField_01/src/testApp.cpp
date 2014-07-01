@@ -44,7 +44,7 @@ void testApp::draw(){
     
     if(frameRate){
         ofSetColor(200);
-        ofDrawBitmapString("fps: "+ofToString(ofGetFrameRate()), 20, 20);
+        ofDrawBitmapString("fps: "+ ofToString(ofGetFrameRate()), 20, 20);
     }
     
     
